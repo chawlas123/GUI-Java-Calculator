@@ -1,0 +1,26 @@
+public class Calculate {
+    double value;
+
+    Double operation(double opperand1, double opperand2, int sign) {
+        if (sign == 1) {
+            value = opperand1 + opperand2;
+        }
+        if (sign == 2) {
+            value = opperand1 - opperand2;
+        }
+        if (sign == 3) {
+            value = opperand1 * opperand2;
+        }
+        if (sign == 4) {
+            value = opperand1 / opperand2;
+        }
+        if (sign == 5){
+            value = opperand1 * -1;
+        }
+        if (sign == 6){
+            value = opperand1 / 100;
+        }
+
+        return value;
+    }
+}
